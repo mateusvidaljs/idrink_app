@@ -1,0 +1,239 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+/* ----- CUSTOMIZED TAGS -------*/
+
+@font-face {
+    font-family: JuliusSansOne;
+    src: url(../fonts/JuliusSansOne-Regular.ttf);
+}
+
+body{
+	font-family: 'JuliusSansOne', sans-serif;
+}
+
+img{
+	border: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* ----- CUSTOMIZED CLASSES -------*/
+
+.welcome-page{
+	background-color: #201F1E;
+}
+
+.imagem-centralizada{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.imagem-menu{
+	display: block;
+	margin-left: 50px;
+}
+
+.barra-carregamento{
+	margin-top: 100px;
+}
+
+.icones{
+	width: 100px;
+	margin-top: 20px;
+}
+
+.color-maroom{
+	background: #3A0809!important;
+    color: #fff;
+}
+
+.centro{
+	text-align: center;
+}
+
+.menu-lateral{
+	background-color: #3A0809;
+}
+
+.fotos-produtos{
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+}
+
+.wspace-none{
+	white-space: nowrap;
+}
+
+.material-icons{
+	font-size: 30px;
+}
+
+.custom-txt{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.color-cart{
+	background: #0099CF!important;
+    color: #fff;
+}
+
+.panel-usuario{
+	background: #FF7F00!important;
+    color: #fff;
+    height: 60%;
+}
+
+.card-nome-usuario{
+	text-align: center;
+}
+
+.imagem-usuario{
+	width: 150px;
+	border-radius: 50%;
+	margin-top: 15px;
+}
+
+.cards-dados{
+	text-align: center;
+}
+
+.card-pedidos{
+	background: #333333!important;
+    color: #fff;
+    height: 67px;
+}
+
+.card-litros{
+	background: #3A0809!important;
+    color: #fff;
+    height: 67px;
+}
+
+.title-cards{
+	font-size: 30px;
+}
+
+.dados-pessoais label{
+	color: #FF7F00;
+	font-weight: bold;
+}
+
+.produto-single a span{
+	bottom: -20px;
+}
+
+.nome-bebida{
+	font-size: 10px;
+	white-space: normal;
+	color: #3A0809;
+	font-weight: bold;
+}
+
+.valor-unidade{
+	font-size: 11px;
+	color: #8B4500;
+}
+
+.preco-prod{
+	color: #333;
+	font-size: 14px;
+}
+
+.panelprod{
+	width: 100%;
+	height: 220px;
+	text-align: center;
+	box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+	margin-bottom: 5px;
+}
+
+.login-page{
+	background-image: url('../img/loginbackground.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.login-page a{
+	color: #FF7F00;
+}
+
+.input-idrink{
+	width: 100%;
+	height: 40px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #FF7F00;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #FF7F00;
+}
+
+#btnLogar{
+	height: 40px;
+}
+
+.form-content{
+	margin-top: 50%;
+}
+
+.form-content .input-idrink{
+	text-align: center;
+}
+
+.direita{
+	text-align: right;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.row-precocalculado{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.text-carregando{
+	text-align: center;
+	color: #FF7F00;
+}
+
+.img-carregamento{
+	width: 100px;
+}
+
+/* ----- CUSTOMIZED IDS -------*/
+
+#txtQtdPedido{
+	width: 60px;
+	height: 30px;
+	text-align: center;
+	font-size: 24px;
+}
+
+#alertzeroitens{
+	display: none;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Your app title -->
+    <title>Bar Móvel</title>
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+      http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+      -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="theme-black">
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal menu-lateral">
+        <div class="card">
+            <div class="card-content">
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a href="cadastro_usuario.html" class="item-link item-content">
+                                <div class="item-media">
+                                    <i class="icon material-icons">shopping_cart</i>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-title">Compras</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="item-link item-content">
+                                <div class="item-media">
+                                    <i class="icon material-icons">money_off</i>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-title">Promoções</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="item-link item-content">
+                                <div class="item-media">
+                                    <i class="icon material-icons">event</i>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-title">Eventos</div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="item-link item-content">
+                                <div class="item-media">
+                                    <i class="icon material-icons">settings</i>
+                                </div>
+                                <div class="item-inner">
+                                    <div class="item-title">Preferências</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-fixed toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="home" class="page">
+                    <a href="carrinho.html" class="floating-button floating-button-to-popover open-popover color-cart">
+                        <i class="icon material-icons">kitchen</i>
+                    </a>
+                    
+
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="left">
+                                <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                            </div>
+                            <div class="center">
+                                <span>iDrink App</span>
+                            </div>
+                            <div class="right">
+                                <a href="usuario.html" class="link icon-only">
+                                    <i style="color: #fff;" class="icon material-icons">person_outline</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="content-block">
+                            <p class="buttons-row">
+                                <a id="pegasus" href="cervejas.html" style="height: 190px" class="button button-big button-fill button-raised color-orange">
+                                    <img class="icones" src="img/icons/cerveja_gray.png">
+                                    <br/>Cervejas
+                                </a>
+                                <a href="chopes.html" style="height: 190px" class="button button-big button-fill button-raised color-maroom">
+                                    <img class="icones" src="img/icons/chope_white.png">
+                                    <br/>Chopes
+                                </a>
+                            </p>
+
+                            <p class="buttons-row">
+                                <a href="#" style="height: 190px" class="button button-big button-fill button-raised color-maroom">
+                                    <img class="icones" src="img/icons/vinho_white.png">
+                                    <br/>Vinhos
+                                </a>
+                                <a href="#" style="height: 190px" class="button button-big button-fill button-raised color-orange">
+                                    <img class="icones" src="img/icons/whiskey_gray.png">
+                                    <br/>Whiskeys
+                                </a>
+                            </p>
+
+                            <p class="buttons-row">
+                                <a href="#" style="height: 190px" class="button button-big button-fill button-raised color-orange">
+                                    <img class="icones" src="img/icons/vodka_gray.png">
+                                    <br/>Vodkas
+                                </a>
+                                <a href="#" style="height: 190px" class="button button-big button-fill button-raised color-maroom">
+                                    <img class="icones" src="img/icons/champagne_white.png">
+                                    <br/>Champagnes
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/classProdutos.js"></script>
+    <script type="text/javascript" src="js/classUsuario.js"></script>
+    <script type="text/javascript" src="js/classLogin.js"></script>
+    <script type="text/javascript" src="js/classCarrinho.js"></script>
+    <script type="text/javascript" src="js/mainscripts.js"></script>
+</body>
+
+</html>

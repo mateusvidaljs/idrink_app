@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com; media-src *">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="theme-deeppurple">
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <div class="views">
+        <div class="view view-main">
+            <div class="pages navbar-fixed toolbar-through">
+                <div data-page="login" class="page login-page">
+                    <div class="page-content">
+                        <form id="frmLogin" class="form-content">
+                            <div class="row">
+                                <div class="col-10"></div>
+                                <div class="col-80">
+                                    <input type="text" class="input-idrink" placeholder="Usuário">
+                                </div>
+                                <div class="col-10"></div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-10"></div>
+                                <div class="col-80">
+                                    <input type="password" class="input-idrink" placeholder="Senha">
+                                </div>
+                                <div class="col-10"></div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-10"></div>
+                                <div class="col-80">
+                                    <button type="button" id="btnLogar" class="button button-raised button-fill col-100 color-orange">Logar</button>
+                                </div>
+                                <div class="col-10"></div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-10"></div>
+                                <div class="col-40">
+                                    <div class="left"><a href="#">Criar conta</a></div>
+
+                                </div>
+                                <div class="col-40">
+                                    <div class="direita"><a href="#">Esqueci a senha</a></div>
+                                </div>
+                                <div class="col-10"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/classLogin.js"></script>
+</body>
+
+</html>
