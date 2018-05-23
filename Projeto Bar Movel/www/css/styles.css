@@ -1,37 +1,49 @@
-/*
-   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
-   statusbar plugin is added, it also adds default setting to make the content white via:
-
-       <preference name="StatusBarStyle" value="lightcontent"/>
-
-   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
-   in the config.xml file and will be added by the CLI when you build locally.
-
-   See https://github.com/apache/cordova-plugin-statusbar
-*/
-
 /* ----- CUSTOMIZED TAGS -------*/
-
-@font-face {
-    font-family: JuliusSansOne;
-    src: url(../fonts/JuliusSansOne-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 body{
-	font-family: 'JuliusSansOne', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 img{
 	border: none;
 }
 
-hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+footer{
+	text-align: center;
 }
 
 /* ----- CUSTOMIZED CLASSES -------*/
+.loadpage{
+	font-family: 'Quicksand', sans-serif;
+}
+
+.img-slider{
+	width: 100%;
+    height: auto;
+}
+
+.swiper-container {
+  height: 200px;
+}
+
+.progressbar-infinite{
+	width: 50%;
+}
+
+.loading-gif{
+	text-align: center;
+}
+
+.loading-gif .legenda{
+	font-size: 16px;
+	color: #FF7F00;
+}
+
+.navbar .navbar-inner .centralizado{
+	width: 100%;
+	text-align: center;
+}
 
 .welcome-page{
 	background-color: #201F1E;
@@ -53,13 +65,23 @@ hr {
 }
 
 .icones{
-	width: 100px;
+	width: 60px;
 	margin-top: 20px;
 }
 
 .color-maroom{
-	background: #3A0809!important;
+	background: #363636!important;
     color: #fff;
+}
+
+.color-cerva{
+	background: #F9C416!important;
+    color: #fff;
+}
+
+.color-grey{
+	background: #D3D3D3!important;
+    color: #363636;
 }
 
 .centro{
@@ -83,6 +105,10 @@ hr {
 
 .material-icons{
 	font-size: 30px;
+}
+
+.link{
+	color: #FF7F00;
 }
 
 .custom-txt{
@@ -111,6 +137,7 @@ hr {
 }
 
 .imagem-usuario{
+	height: 150px;
 	width: 150px;
 	border-radius: 50%;
 	margin-top: 15px;
@@ -141,6 +168,10 @@ hr {
 	font-weight: bold;
 }
 
+.produto-single-home a span{
+
+}
+
 .produto-single a span{
 	bottom: -20px;
 }
@@ -164,7 +195,7 @@ hr {
 
 .panelprod{
 	width: 100%;
-	height: 220px;
+	height: auto;
 	text-align: center;
 	box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
 	margin-bottom: 5px;
@@ -191,8 +222,46 @@ hr {
 	color: #FF7F00;
 }
 
+.input-completo{
+	width: 100%;
+    padding: 11px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.custom-button{
+	background-color: transparent;
+	width: 90%;
+    padding: 8px 1px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.buttons-row .categorias-btn{
+	height: 150px;
+	font-size: 12px;
+}
+
+.center{
+	text-align: center;
+}
+
+.custom-button i{
+	font-size: 20px;
+}
+
 #btnLogar{
 	height: 40px;
+}
+
+
+
+#btnPesquisarHome i{
+	color: #333;
 }
 
 .form-content{
@@ -225,6 +294,64 @@ hr {
 	width: 100px;
 }
 
+.navbar{
+	color: #ff9800;
+}
+
+.navbar a i{
+	color: #ff9800;
+}
+
+.desc-bebida{
+	line-height: normal;
+}
+
+.detprecoprod{
+	font-size: 30px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.swiper-container{
+	background-color: #444;
+}
+
+.theme-white .modal-button{
+	color: #ff9800;
+}
+
+.menu-profile{
+	height: 230px;
+	color: #ff9800;
+	background-color: #fff;
+}
+
+.menu-profile a{
+	color: #ff9800;
+}
+
+.options-menu{
+	background-color: #fff;
+}
+
+.checkmark{
+	width: 200px;
+}
+
+.pedidoconcl{
+	font-size: 24px;
+}
+
+.select{
+	background-color: transparent;
+}
+
+.item-input{
+	float: right;
+}
+
 /* ----- CUSTOMIZED IDS -------*/
 
 #txtQtdPedido{
@@ -236,4 +363,27 @@ hr {
 
 #alertzeroitens{
 	display: none;
+}
+
+#txtFotoProduto{
+	max-width: 120px;
+	/*height: 300px;*/
+}
+
+#txtNomeProduto{
+	font-size: 17px;
+	font-weight: bold;
+}
+
+#imgIconePais{
+	width: 21px;
+	float: left;
+}
+
+#txtPaisOrigem{
+	margin-left: 5px;
+}
+
+#btnOtimo{
+	width: 100%;
 }
